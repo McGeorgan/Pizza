@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Guests'favorite</h1>
+
+
+<a href="/">Main Page</a>
+<a href="/order">Order</a>
+<a href="/stat">Statistics</a> <br>
+
+<ol>
+    <li th:each="pizza : ${pizzas}" th:text="${pizza}"></li>
+</ol>
+
+</body>
+</html>

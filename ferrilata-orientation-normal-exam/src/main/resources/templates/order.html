@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>Pixam Express</h1>
+
+<a href="/">Main Page</a>
+<a href="/order">Order</a>
+<a href="/stat">Statistics</a> <br>
+
+<p th:text="'Your order ('+ ${id} +')'"></p>
+<p th:text="'Name: '+${pizza.getName()}"></p>
+<p th:text="'Address: '+${pizza.address}"></p>
+<p th:text="'Pizza: '+${pizza.pizza}"></p>
+
+</body>
+</html>
